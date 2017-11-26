@@ -13,7 +13,7 @@ def startDetectMotion():
         if GPIO.input(pir):
             com.printMotion()
             #com.saveToHtml()
-            com.sendNotoficationMotion()
+            #com.sendNotoficationMotion()
             com.sendToThingsPeak()
             time.sleep(2)                               #D1- Delay to avoid multiple detection
         time.sleep(0.1)                                #While loop delay should be less than detection(hardware) delay
