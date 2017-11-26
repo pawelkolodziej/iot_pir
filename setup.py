@@ -8,5 +8,6 @@ setup(
     license='MiT',
     author='PawelK',
     author_email='pakolodziej@gmail.com',
-    description='motion detector with PIR sensor'
+    description='motion detector with PIR sensor',
+    install_requires=['PyFCM']
 )
