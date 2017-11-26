@@ -3,12 +3,15 @@ import time
 import datetime
 import os
 import urllib
-import sensor as sensor
+from pyfcm import FCMNotification
 
 # gloabl variables
 ts = None
 st = None
 THINGS_PEAK_API_KEY = "DALZ4ZCKJ03P9GHY"
+#FCM
+push_service = FCMNotification(api_key="AIzaSyArSraurFhSQqzh3G_5Av_m6-ZFA6ptxEo")
+registration_id = "<device registration_id>"
 
 
 # get current Date and Time
@@ -38,3 +41,8 @@ def saveToHtml():
                 raise
     with open(filename, "ab") as fo:
         fo.write(st + 'Motion detected!')
+
+def sendNotoficationMotion():
+    message_title = "Alert"
+    message_body = "Wykryto ruch"
+    result = push_service.notify_single_device(registration_id=registration_id, message_title=message_title, message_body=message_body)
