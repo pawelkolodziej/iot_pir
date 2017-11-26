@@ -24,7 +24,7 @@ def getCurrentDateAndTime():
 # send it to thingspeak.com
 def sendToThingsPeak():
     baseURL = 'https://api.thingspeak.com/update?api_key=%s' % THINGS_PEAK_API_KEY
-    f = urllib.urlopen(baseURL + "&field3=MOTION_DETECTED")
+    f = urllib.urlopen(baseURL + "&field3=1")
 
 
 def printMotion():
