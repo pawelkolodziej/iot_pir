@@ -13,7 +13,6 @@ THINGS_PEAK_API_KEY = "DALZ4ZCKJ03P9GHY"
 push_service = FCMNotification(api_key="AIzaSyArSraurFhSQqzh3G_5Av_m6-ZFA6ptxEo")
 registration_id = "<device registration_id>"
 
-
 # get current Date and Time
 def getCurrentDateAndTime():
     global ts, st
