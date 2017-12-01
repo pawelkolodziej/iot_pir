@@ -39,7 +39,7 @@ def saveToHtml():
             if exc.errno != errno.EEXIST:
                 raise
     with open(filename, "ab") as fo:
-        fo.write(st + 'Motion detected!')
+        fo.write('Motion detected!')
 
 def sendNotoficationMotion():
     message_title = "Alert"
