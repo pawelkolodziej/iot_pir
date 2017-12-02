@@ -15,5 +15,5 @@ def startDetectMotion():
             #com.saveToHtml()
             com.sendNotoficationMotion()
             com.sendToThingsPeak()
-            time.sleep(2)
+            time.sleep(10)
         time.sleep(0.1)
