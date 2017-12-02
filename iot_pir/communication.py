@@ -8,10 +8,10 @@ from pyfcm import FCMNotification
 # gloabl variables
 ts = None
 st = None
-THINGS_PEAK_API_KEY = "DALZ4ZCKJ03P9GHY"
+THINGS_PEAK_API_KEY = "K4IFY5XAYK4NHDZK"
 #FCM
-push_service = FCMNotification(api_key="AIzaSyArSraurFhSQqzh3G_5Av_m6-ZFA6ptxEo")
-registration_id = "<device registration_id>"
+push_service = FCMNotification(api_key="AAAAjVs6fnk:APA91bEbakG5CYynZsP2DtYNPPYKAvNMVnjMFf2eyvWrTwn0lGd7dptzs0TwP7Fm0mtct_v2rdkmx_vyX57HMy57CwwDqUF2n_yHPOr0Sw8KOTiKNCcwAIvxfumBUgHa6LAdgEBaiK5D")
+registration_id = "eHZgHLdQJ24:APA91bEk8-JwSocNqiMSFJP04r5QHEfQA5MmGCDVZRVSukckzz2ZCVGOaS4kFZK18oSUZq28Fl6diRsDpxVz0tyOezH_A7_YLP5ZFMgF8NvPaY7KLIfeeos0L3NHcoR_GzAwTStriEWd"
 
 # get current Date and Time
 def getCurrentDateAndTime():

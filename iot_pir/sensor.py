@@ -13,7 +13,7 @@ def startDetectMotion():
         if GPIO.input(pir):
             com.printMotion()
             #com.saveToHtml()
-            #com.sendNotoficationMotion()
+            com.sendNotoficationMotion()
             com.sendToThingsPeak()
             time.sleep(2)
         time.sleep(0.1)
